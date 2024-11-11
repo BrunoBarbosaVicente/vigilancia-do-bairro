@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    overflow: hidden; /* Para esconder qualquer barra de rolagem */
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(47, 59, 73, 0.63);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 100;
+  }
+  
+  header .head {
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    margin-top: 0;
+  }
+
+  p, h3 {
+    color: #ffffff;
+  }
+
+  .info{
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #75747415;
+    text-align: center;
+    padding:1rem;
+    margin-top: 15rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #addEventButton {
+    background-color: #74f099;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #video-background {
+    position: fixed;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+    border: none; /* Remover bordas */
+  }
+  
+  button[type="submit"] {
+    background-color: #74f099;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #62d585;
+  }
+  

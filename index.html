@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Extensão - Engenharia de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/pngwing.com.png">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>Vigilância do bairro</h1>
+            <p>Se você ver algo suspeito no bairro, faça sua denuncia para que seus vizinhos fiquem atentos !</p>
+        </div>
+        <button id="addEventButton">Denunciar</button>
+        <button id="addEventButton"><a href="./tutorial.html">Tutorial</a></button>
+    </header>
+    <video autoplay muted loop id="video-background" src="src/imagens/videoplayback.mp4"></video>
+    <footer>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adicionar denuncia</h2>
+                <form id="addEventForm">
+                    <label for="eventImg">Adicione a imagem suspeita:</label>
+                    <input type="file" id="eventImage">
+                    <label for="eventName">Local da ocorrência:</label>
+                    <input type="text" id="eventName" required>
+                    <label for="eventDate">Data da ocorrência</label>
+                    <input type="date" id="eventDate" required>
+                    <label for="eventDescription">Descrição:</label>
+                    <textarea id="eventDescription" required></textarea>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contêiner para exibir as denúncias -->
+    <div id="eventList" class="event-list">
+        <!-- Denúncias serão adicionadas aqui -->
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
